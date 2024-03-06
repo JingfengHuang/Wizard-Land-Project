@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+        <title>Future events Wizard land</title>
+    </head>
+    <body style='background-image: url(./images/future_events_background.png);'>
+        <header>
+            <h1>Wizard Land</h1>
+        </header>
+
+        <nav class='navigation'>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li id='explore_nav'><a href='explore_castle.html'>Explore</a></li>
+                <li><a href='booking.html'>Booking</a></li>
+                <li><a href='help.html'>Help</a></li>
+                <li id='account_nav' class='currentpage'><a href='account.html'>Account</a></li>
+                <li><a href='about.html'>About</a></li>
+            </ul>
+        </nav>
+
+        <nav id='explore_second_nav' class='second_nav'>
+            <ul>
+                <li><a href='./explore_castle.html'>Wizard Castle</a></li>
+                <li><a href='./explore_teleport.html'>Teleport</a></li>
+                <li><a href='./explore_events.html'>Events</a></li>
+            </ul>
+        </nav>
+
+        <nav id='account_second_nav' class='second_nav'>
+            <ul>
+                <li><a href='./account.html'>Sign up</a></li>
+                <li><a id='user_full_name' href='./log_in.html'>Log in</a></li>
+                <li><a href='#'>Future events</a></li>
+            </ul>
+        </nav>
+
+
+        <main>
+            <section class='slogan'>
+                <h3>Upcoming</h3>
+                <h2>events</h2>
+            </section>
+            
+
+            <section class='moreinformation'>
+
+                <div id='date_information' class='information'>
+
+                    <div>
+                        <p>Today's date is:<p>
+                        <p id="date"></p>
+                    </div>
+
+                    <div>
+                        <label for='traveldate'>Check events for the month of your selected departure date: </label>
+                        <input type='date' id='traveldate' name='traveldate'>
+                    </div>
+
+                    <div class='submit'>
+                        <input type="submit" value="check" id='submitdate'>
+                    </div>
+                </div>
+
+                <div class='information future_event'>
+                    <figure>
+                        <img src="./images/Fly.png" alt='Upcoming event: fly freely'>
+                    </figure>
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Fly freely
+                        </h3>
+                        <p id="flydate" class='informationtext'></p>
+
+                        <p class='informationtext'>
+                            Our wizard will help you to fly freely, even without a broom! Come on, go higher!
+                        </p>
+
+                    </section>
+                </div>
+
+                <div class='information future_event'>
+                    <figure>
+                        <img src="./images/cat.png" alt='Receive a magic cat'>
+                    </figure>
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Receive a magic cat
+                        </h3>
+
+                        <p id="catdate" class='informationtext'></p>
+
+                        <p class='informationtext'>
+                            Every tourist can receive a magic cat for free. It can understand any words of the owner, do some basic chores according to the owner's instructions, and can also protect the owner in a critical moment.
+                        </p>
+
+                    </section>
+                </div>
+
+                <div class='information future_event'>
+                    <figure>
+                        <img src="./images/fire.png" alt='Sacrificial ceremony'>
+                    </figure>
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Sacrificial ceremony
+                        </h3>
+
+                        <p id="firedate" class='informationtext'></p>
+
+                        <p class='informationtext'>
+                            In the Land of Wizards, a sacrificial ceremony will be held on January 10th every year, and a bonfire will be used to illuminate the night sky to commemorate the great magician Mar. It was he who used the knowledge he had learned throughout his life to arrange a barrier near the Wizard’s Land to protect the Wizard’s Land.
+                        </p>
+
+                    </section>
+                </div>
+
+                <div class='information future_event'>
+                    <figure>
+                        <img src="./images/chess.png" alt='The photo of chess, black and white'>
+                    </figure>
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Magic Chess
+                        </h3>
+
+                        <p id="chessdate" class='informationtext'></p>
+
+                        <p class='informationtext'>
+                            The magic chess is one of the traditional events in Wizard land. In this event the chess pieces is no longer the normal chess pieces. They will be the living King, Queen, Rook, Knight, etc.. They will strictly follow the player's orders. Every tourist can become a chess player and pursue the title of "light of wisdom".
+                        </p>
+
+                    </section>
+                </div>
+
+            </section>
+        </main>
+
+        <script src='js/jquery-3.5.1.min.js'></script>
+        <script src='js/jquery.cycle2.min.js'></script>
+        <script src='js/script.js'></script>
+    </body>
+</html>

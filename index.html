@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
+        <title>Homepage of Wizard Land</title>
+    </head>
+    <body style='background-image: url(./images/pexels-kei-scampa-2370726.png);'>
+
+        <header>
+            <h1>Wizard Land</h1>
+        </header>
+
+        <audio autoplay>
+            <source src="./audios/bensound-creativeminds.mp3" type='audio/mp3'>
+        </audio>
+
+        <nav class='navigation'>
+            <ul>
+                <li class='currentpage'><a href='#'>Home</a></li>
+                <li id='explore_nav'><a href='explore_castle.html'>Explore</a></li>
+                <li><a href='booking.html'>Booking</a></li>
+                <li><a href='help.html'>Help</a></li>
+                <li id='account_nav'><a href='account.html'>Account</a></li>
+                <li><a href='about.html'>About</a></li>
+            </ul>
+        </nav>
+
+        <nav id='explore_second_nav' class='second_nav'>
+            <ul>
+                <li><a href='./explore_castle.html'>Wizard Castle</a></li>
+                <li><a href='./explore_teleport.html'>Teleport</a></li>
+                <li><a href='./explore_events.html'>Events</a></li>
+            </ul>
+        </nav>
+
+        <nav id='account_second_nav' class='second_nav'>
+            <ul>
+                <li><a href='./account.html'>Sign up</a></li>
+                <li><a id='user_full_name' href='./log_in.html'>Log in</a></li>
+                <li><a href='./future_events.html'>Future events</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class='slogan'>
+                <h3 id='welcome'>Experience</h3>
+                <h2 id='full_name'>REAL MAGIC</h2>
+            </section>
+            
+
+            <section class='moreinformation'>
+
+                <div class='reviews_heading'>
+                    <p id="date"></p>
+                    <p>What a nice day!<p>
+                </div>
+
+                <h2 id='serve' class='reviews_heading'>Check our slideshow and the crystal ball</h2>
+
+                <div class='index'>
+                
+                    <div class='information column'>
+                        <figure>
+                            <a href='./explore_castle.html'>
+                                <img src="./images/castle_squ.png" alt='The wizard castle'>
+                            </a>
+                        </figure>
+                        <p>Wizard Castle</p>
+                    </div>
+
+                    <div class='information column'>
+                        <figure>
+                            <a href='./explore_teleport.html'>
+                                <img src="./images/universe_squ.png" alt='Teleport'>
+                            </a>
+                        </figure>
+                        <p>Teleport</p>
+                    </div>
+
+                    <div class='information column'>
+                        <figure>
+                            <a href='./explore_events.html'>
+                                <img src="./images/events_squ.png" alt='Events'>
+                            </a>
+                        </figure>
+                        <p>Events</p>
+                    </div>
+
+                </div>  
+
+
+                <div class='reviews_heading'>
+                    <p>Wanna check more?</p>
+                </div>
+
+                <!-- This section is inspired by Cycle2, and the website is: http://jquery.malsup.com/cycle2/ -->
+                <section id="slideshow">
+                    <span id=prev>&lt;&lt;</span>
+
+                    <div class='cycle-slideshow' data-cycle-fx="fade" data-cycle-prev="#prev" data-cycle-next="#next">
+                        <img src="images/pexels-kei-scampa-2370726.png" alt="The hand holding light.">
+                        <img src="images/castle-background.png" alt="The crystal ball shining.">
+                        <img src="images/chess_rec.jpg" alt="The magic chess that are waiting for you to play.">
+                        <img src="images/Library_resources.png" alt="The spell library with lots of spell books.">
+                        <img src="images/pexels-cottonbro-5435192.png" alt="The witch holding the pumpkin lantern">
+                        <img src="images/luxury-room-rec.png" alt="The very luxury room that you will live.">
+                        <img src="images/future_events_background.png" alt="The future sign that welcome you to explore.">
+                        <img src="images/welcome.png" alt="The welcome sign that welcome guests.">
+                    </div>
+
+                    <span id=next>&gt;&gt;</span>
+                </section>
+                
+                <h2 class='reviews_heading'>Reviews from other tourists</h2>
+                    
+                <div class='information reviews'>
+
+                    <figure>
+                        <img src="./images/user_1.png" alt='The photo of the first user'>
+                    </figure>
+
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Julia: 26 years old photographer
+                        </h3>
+                        <p class='informationtext'>
+                            "I like to explore the mysterious world with my friends"
+                        </p>
+    
+                        <p class='informationtext'>
+                            WizardLand is so interesting that I still want to experience it again. I have recommended it to everyone around me, because it is relaxing, comfortable, and full of mystery. Secretly tell you, there is a spell here that can help you find true love! Don't hesitate anymore, come and experience it!
+                        </p>
+
+                    </section>
+
+                </div>
+
+                <div class='information reviews'>
+
+                    <figure>
+                        <img src="./images/user_2.png" alt='The photo of the second user'>
+                    </figure>
+
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Julia: 30 years old programmer
+                        </h3>
+                        <p class='informationtext'>
+                            "I am happiest when I am with my children"
+                        </p>
+    
+                        <p class='informationtext'>
+                            Wizard Land is my child's favorite theme resort, where there are various events. To my surprise, it is not only suitable for children to play, but also for adults to come here on vacation. The comfort, food, architecture, and scenery here are all unique and enjoyable. The wizards here are kind. Their service makes me feel like this is my home. And I learned some basic spells to help me write code! This is really convenient.
+                        </p>
+
+                    </section>
+
+                </div>
+
+                <div class='information reviews'>
+
+                    <figure>
+                        <img src="./images/user_3.png" alt='A lady reading the book.'>
+                    </figure>
+
+                    <section class='informationcontent'>
+
+                        <h3 class='informationtitle'>
+                            Alaia: 18 years student
+                        </h3>
+                        <p class='informationtext'>
+                            "Studying is really exhausting! I need a theme resort that can give me happiness."
+                        </p>
+    
+                        <p class='informationtext'>
+                            Wizard land is a place that makes me feel extremely comfortable and relaxing. There are all kinds of food and drinks, all kinds of weird props and activities. If possible, I am willing to stay here for a whole lifetime with my friends!
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </section>
+        </main>
+
+        <script src='js/jquery-3.5.1.min.js'></script>
+        <script src='js/jquery.cycle2.min.js'></script>
+        <script src='js/script.js'></script>
+    </body>
+</html>

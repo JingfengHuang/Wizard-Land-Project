@@ -1,0 +1,638 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    box-sizing:border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Work Sans', 'Rubik', cursive, 'sans-serif';
+    color: white;
+    text-align: center;
+}
+
+header{
+    font-size: 1.5vw;
+    font-family: 'Rubik';
+}
+
+.navigation{
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    width: 100%;
+    height: 4vw;
+    position: fixed;
+    top: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigation>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation>ul>li{
+    text-decoration: none;
+    text-align: center;
+    width: 16.66%;
+    height: 100%;
+    transition: 0.2s ease;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigation>ul>li>a{
+    color:white;
+    font-family: 'Work Sans';
+    font-size: 2vw;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.2vw 5vw;
+}
+
+.navigation>ul>li:hover{
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.currentpage{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slogan{
+    font-family: 'Dancing Script';
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.slogan>h3{
+    color:white;
+    font-size: 6vw;
+    margin-bottom: 20vh;
+}
+
+.slogan>h2{
+    color:white;
+    font-size: 12vw;
+}
+
+.moreinformation{
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle, rgba(255, 126, 244, 0.5), rgba(103, 199, 255, 0.6), rgba(0, 0, 0, 0.7));
+    margin-top: 5vh;
+    width: 100%;
+    padding-bottom: 2vw;
+    justify-content: space-around;
+}
+
+.index{
+    display: flex;  
+    margin-top: 5vh;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.discovertitle{
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.index img{
+    border-radius: 50%;
+    width: 24vw !important;
+    transition: 0.5s ease;
+}
+
+.index img:hover{
+    transform: scale(1.05);
+}
+
+.current_discover{
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.information{
+    color: white;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+	text-align: left;
+}
+
+.hidden{
+    display: none;
+}
+
+.crystal_ball{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.information>figure{
+    left: 0 !important;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informationcontent{
+    width: 60vw;
+}
+
+.column{
+    font-size: 2.5vw;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    width: 33.33%;
+    overflow: hidden;
+    margin-top: -1vw;
+    margin-bottom: 5vw;
+}
+
+.column>figure>a>img{
+    animation-name: none;
+}
+
+.informationtitle{
+    font-size: 3vw;
+    width: 80%;
+    color:white;
+    margin-bottom: 2vw;
+}
+
+.informationtext{
+    font-size: 1.4vw;
+    width: 80%;
+    font-weight: normal;
+    margin-bottom: 2vw;
+}
+
+.reviews>.informationcontent>.informationtitle{
+    font-size: 2vw;
+}
+
+.reviews_heading{
+    font-size: 6vw !important;
+    margin-top: 3vw;
+    padding-top: 1.5vw;
+    margin-bottom: 0vw;
+    font-family: 'Dancing Script';
+}
+
+.reviews>figure{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.reviews>section{
+    width: 60%;
+}
+
+.reviews>figure>img{
+    animation-name: none !important;
+    transition: 0.3s ease;
+}
+
+.reviews>figure>img:hover{
+    transform: scale(1.05);
+}
+
+#castlepart figure img, #teleportpart figure img, #eventpart figure img{
+    border-radius: 100%;
+    animation-name: none;
+    width: 30vw !important;
+    margin: 2vh 5vw !important;
+    transition: 0.3s ease;
+}
+
+#teleportpart figure img{
+    animation-name: rotate !important;
+}
+
+#castlepart img:hover, #eventpart img:hover{
+    transform: scale(1.05);
+}
+
+.information figure img{
+    border-radius: 100%; 
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    width: 20vw;
+    margin: 2vh 10vw;
+}
+
+.moreinformation h2{
+    font-size: 4vw;
+    margin: 1vw 0;
+}
+
+.table_session{
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.table_session>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    width: 100%;
+}
+
+.tabletitle{
+    font-size: 2.5vw;
+    width: 100%;
+    position: relative;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+label{
+    font-size: 1.5vw;
+    padding: 0vw 1vw;
+    margin:0.3vw;
+}
+
+input{
+    background-color:rgba(231, 244, 255, 0.801);
+    border-radius: 3em;
+    color:rgba(0, 0, 0, 0.795);
+    font-size: 1.2vw;
+    width: 20vw;
+    padding: 0.5vw 2vw;
+    border:none;
+}
+
+.roomimage{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    margin-bottom: 2vw;
+    margin-left: 0vw !important;
+}
+
+.roomimage img{
+    border-radius: 6vw;
+    animation-name: none;
+    width: 30%;
+    transition: 0.3s ease;
+}
+
+.roomimage img:hover{
+    transform: scale(1.05);
+}
+
+.roomtype{
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center !important;
+    margin-bottom: 2vw;
+    width: 100%;
+    margin-left: 0vw !important;
+}
+
+.roomtype section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roomtype label{
+    padding: 0;
+}
+
+.roomtype section input{
+    width: 35%;
+}
+
+.submit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.submit>input{
+    background-color: rgba(0, 0, 0, 0.63);
+    color:white;
+    width: 8vw;
+    border: none;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.submit>input:hover{
+    transform: scale(1.05);
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+@keyframes scale{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+#Resources{
+    color: white;
+    font-size: 0.5vw;
+    position: relative;
+    margin: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#Resources h2{
+    font-size: 3vw;
+}
+
+#Copyrights{
+    font-size: 1.5vw;
+    position: relative;
+    margin: 1vh 2vw;
+}
+
+.second_nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 7.5vw;
+    width: 16.66%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
+.second_nav ul{
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.second_nav>ul>li{
+    text-decoration: none;
+    transition: 0.2s ease;
+    width: 100%;
+    height: 100%;
+    margin: 0 0.2vw;
+    padding: 1vw 0;
+}
+
+.second_nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    padding: 2vw 2vw;
+}
+
+.second_nav>ul>li:hover{
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#explore_second_nav{
+    left:16.66%;
+    display: none;
+}
+
+#account_second_nav{
+    left: 66.67%;
+    display: none;
+}
+
+.account{
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+}
+
+#create_account{
+    width: 80%;
+    background-color: rgba(253, 252, 238, 0.7);
+    margin: 2vw 0;
+    border-radius: 2vw;
+    color: rgba(255, 82, 255, 0.822) !important;
+}
+
+#create_account>h2{
+    font-family: 'Dancing Script';
+    font-size: 5vw;
+}
+
+#create_account>div{
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login>div{
+    margin: 1.5vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#date_information{
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 1vw;
+    color: black;
+    padding: 1vw 0vw;
+}
+
+#date{
+    margin-left: 2vw;
+}
+
+.future_event{
+    display: none;
+}
+
+.help{
+    margin: 1.5vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.help_session{
+    margin-bottom: 4vw;
+    width:100%;
+}
+
+.help_title{
+    margin: 2.5vw 0;
+    font-size: 2vw;
+    text-align: start;
+}
+
+#FAQ, #Contact, #feedback_session{
+    margin: 0;
+    font-size: 4vw;
+    font-family: 'Dancing Script';
+}
+
+#Congratulations{
+    margin: 0;
+    font-size: 4vw;
+    font-family: 'Dancing Script';
+    text-align: center;
+    width: 100%;
+}
+
+.help_text{
+    text-align: start;
+    margin-bottom: 1.5vw;
+    font-size: 1.3vw;
+}
+
+#feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedback_text{
+    background-color: rgba(255, 255, 255, 0.7);
+    width:80vw;
+    height: 20vw;
+    border-radius: 2vw;
+    padding: 1vw 2vw;
+    border: none;
+}
+
+#submit_feedback{
+    margin: 2vw 0;
+}
+
+.book_title{
+    margin: 2.5vw 0;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.book_text{
+    text-align: center;
+    margin-bottom: 1.5vw;
+    font-size: 1.3vw;
+}
+
+.error{
+    border: solid red;
+}
+
+#slideshow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.cycle-slideshow{
+    width: 84%;
+    max-height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    z-index: 0;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.cycle-slideshow>img{
+    width: 100%;
+    border-radius: 2vw;
+    opacity: 0.6;
+    overflow: hidden;
+    transform: translate(-0%, -25%);
+}
+
+#slideshow>span {
+    width: 5%;
+	cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 2vw;
+    transition: 0.5s ease;
+    border-radius: 2vw;
+    padding: 0, 0.2vw;
+}
+
+#slideshow>span:hover{
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.3);
+}
